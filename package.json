@@ -9,6 +9,11 @@
   "categories": [
     "Other"
   ],
+  "publisher": "yanglu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/9yanglu/vscode-plugin-console.git"
+  },
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
