@@ -62,12 +62,11 @@ function activate(context) {
 
       // 插入代码段
       const insertTxt = `console.log('${selectedText}:',${selectedText});`;
-      const codeToInsert = `${insertTxt}\n`;
+      const codeToInsert = `\n${insertTxt}\n`;
+      const range = new vscode.Range(selection.start, selection.end);
+
       editor.edit((editBuilder) => {
-        editBuilder.insert(
-          startPosition.with({ line: startPosition.line+1 }),
-          codeToInsert
-        );
+        editBuilder.replace(range, codeToInsert);
       });
 
       // 移动光标到插入代码后的位置

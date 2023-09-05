@@ -9,7 +9,7 @@
   "categories": [
     "Other"
   ],
-  "publisher": "yanglu",
+  "publisher": "yl",
   "repository": {
     "type": "git",
     "url": "https://github.com/9yanglu/vscode-plugin-console.git"
@@ -35,7 +35,7 @@
       },
       {
         "command": "console.insert",
-        "key": "alt+i",
+        "key": "alt+s",
         "when": "editorTextFocus"
       }
     ]
